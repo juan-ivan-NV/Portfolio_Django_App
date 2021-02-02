@@ -1,0 +1,21 @@
+{% extends "pwa/base.html" %}
+  
+{% load static %}
+
+{% block content %}
+
+    {% if form.errors %}
+
+        <p style="color: red;"> Please check these field </p>
+
+    {% endif %} 
+
+    <form action="" method="POST" style="text-align: center;">{% csrf_token %}
+        <div class="containerForm">
+         <table style="color: white; margin:20px auto;">{{form.as_table}}</table> 
+        <input class = "footerbtn" type="submit" value="Send">
+        </div>
+        
+    </form>
+
+{% endblock %}
