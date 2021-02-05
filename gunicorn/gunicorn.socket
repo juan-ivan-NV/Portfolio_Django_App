@@ -1,0 +1,10 @@
+# sudo /nano /etc/systemd/system/gunicorn.socket
+
+[unit]
+Description=gunicorn socket
+
+[Socket]
+ListenStream=/run/gunicorn.socket
+
+[Install]
+WantedBy=socket.target
