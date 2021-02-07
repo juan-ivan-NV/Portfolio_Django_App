@@ -7,7 +7,7 @@ server {
         location = /favicon.ico {access_log off; log_not_found off;}
 
         location /static/ {
-                root /root/myapp/Portfolio_Django_App/jinbsite/pwa;
+                root /home/django/jinbsite/Portfolio_Django_App/jinbsite;
         }
 
         location / {

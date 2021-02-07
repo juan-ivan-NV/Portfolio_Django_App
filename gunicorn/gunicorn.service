@@ -8,8 +8,8 @@ After=network.target
 [Service]
 User=django
 Group=www-data
-WorkingDirectory= /home/myapp/Portfolio_Django_App/jinbsite
-ExecStart=/home/myapp/Portfolio_Django_App/bin/gunicorn \
+WorkingDirectory= /home/django/jinbsite/Portfolio_Django_App/jinbsite
+ExecStart=/home/django/jinbsite/bin/gunicorn \
     --access-logfile - \
     --workers 3 \
     --bind unix:/run/gunicorn.sock \
