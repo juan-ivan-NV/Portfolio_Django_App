@@ -1,4 +1,4 @@
-# sudo /nano /etc/systemd/system/gunicorn.socket
+# sudo nano /etc/systemd/system/gunicorn.socket
 
 [unit]
 Description=gunicorn socket

@@ -8,11 +8,11 @@ After=network.target
 [Service]
 User=django
 Group=www-data
-WorkingDirectory= /root/myapp/Portfolio_Django_App/jinbsite
-ExecStart=/root/myapp/Portfolio_Django_App/bin/gunicorn \
+WorkingDirectory= /home/myapp/Portfolio_Django_App/jinbsite
+ExecStart=/home/myapp/Portfolio_Django_App/bin/gunicorn \
     --access-logfile - \
     --workers 3 \
-    --bin unix:/run/gunicorn.sock \
+    --bind unix:/run/gunicorn.sock \
     jinbsite.wsgi:application
 
 [Install]
