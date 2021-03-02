@@ -1,4 +1,6 @@
-Site hosted on Digital Ocean I't will be available soon...
+Site hosted on Digital Ocean, available now
+Improving constantly
 
+https://jinbsite.com/
 
 ![img](gunicorn/Home.jpg)
